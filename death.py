@@ -67,7 +67,7 @@ while True:
         resposta_correta = input("A resposta está correta? (sim/não): ")
         
         if resposta_correta.lower() in ["sim", "s"]:
-                print("\033[92mSalvo!\033[0m")
+                print("\033[92mÓtimo!\033[0m")
                 break
 
         else:
