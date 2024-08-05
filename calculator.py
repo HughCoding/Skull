@@ -32,7 +32,7 @@ while True:
     escolha = input("Escolha uma opção (1/2/3/4): ")
     
     if escolha not in ["1", "2", "3", "4"]:
-        print(TerminalColor.ERRO, "Opção inválida!" +
+        print(TerminalColor.ERRO, "Opção inválida, digite APENAS números!" +
               TerminalColor.NORMAL)
         break
 
@@ -66,14 +66,14 @@ while True:
         print(f"{num1} {operador} {num2} = {resultado}")
         resposta_correta = input("A resposta está correta? (sim/não): ")
         
-        if resposta_correta.lower() in ["sim", "s"]:
-                print("\033[92mÓtimo!\033[0m")
+        if resposta_correta.lower() in ["sim", "s", "ss"]:
+                print("\033[92mResposta válida!\033[0m")
                 break
 
         else:
             resposta_correta.lower() in ["nao", "não", "n"]
             print(
-                """\033[91m    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣠⣤⣤⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                """\033[91m    ⠀⢀⣀⣀⣠⣤⣤⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⡶⠛⠛⢛⡉⠉⠁⠀⠀⠀⠀⠀⠀⠈⠉⠉⠙⠛⠛⠲⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⡶⠿⡟⠉⠑⠒⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠲⠍⣙⠿⢶⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡾⠛⠉⣠⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⡈⠙⠿⣶⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
